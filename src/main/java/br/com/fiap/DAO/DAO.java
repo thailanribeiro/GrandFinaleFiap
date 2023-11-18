@@ -54,7 +54,8 @@ public class DAO {
             tbl_pessoa.setNome(resultSet.getString("nome"));
             tbl_pessoa.setCidade(resultSet.getString("cidade"));
             tbl_pessoa.setEndereco(resultSet.getString("endereco"));
-            //resto de fisica
+            tbl_pessoa.setCpf(resultSet.getString("cpf"));
+            tbl_pessoa.setRg(resultSet.getString("rg"));
             pessoas.add(tbl_pessoa);
         }
 
@@ -75,7 +76,8 @@ public class DAO {
             tbl_pessoa.setNome(resultSet.getString("nome"));
             tbl_pessoa.setCidade(resultSet.getString("cidade"));
             tbl_pessoa.setEndereco(resultSet.getString("endereco"));
-            //resto de juridica
+            tbl_pessoa.setCnpj(resultSet.getString("cnpj"));
+            tbl_pessoa.setRazaoSocial(resultSet.getString("razao_social"));
             pessoas.add(tbl_pessoa);
         }
 
